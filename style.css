@@ -1,9 +1,8 @@
-body
+*
 {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+    font-family: Roboto;
+    padding: 0px;
+    margin: 0px;
 }
 
 header
@@ -11,7 +10,7 @@ header
     display: flex;
     justify-content: space-around;
     color: white;
-    border: 1px solid white; /*Test porpuses*/
+    padding: 0 60px;
 }
 
 .header_links ul
@@ -34,17 +33,14 @@ header
 }
 
 header,
+footer,
 .hero_banner
 {
-    background-color: #292929;
+    background-color: #1f2937;
 }
-
-.main_content
+footer
 {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    margin: 0px;
+    color: white;
 }
 
 .hero_banner
@@ -52,24 +48,117 @@ header,
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    gap: 150px;
+    padding: 80px;
+}
+
+.hero_content
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
 }
 
 .right_column img{
-    width: 300px;
-    height: 150px;
-}
-
-.hero_banner_text
-{
-    text-align: justify;
-    width: 150px;
-}
+    width: 900;
+    height: 250px;
+} 
 
 .left_column
 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.left_column h1
+{
+    font-size: 48px;
+    width: 400px;
+    color: #F9FAF8;
+}
+
+.left_column p
+{
+    text-wrap: wrap;
+    width: 400px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.left_column button
+{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    padding: 3px 30px;
+    border-radius: 10px;
+}
+
+.section_1
+{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+
+.information_blocks
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 100px;
+}
+
+
+.information_blocks p
+{
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 13px;
+}
+
+.block_content
+{
+    width: 110px;
+    height: 150px;
+    
+}
+
+.block_content img
+{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(65, 65, 253); /*Test porpuses*/
+    border-radius: 10px;
+}
+
+.section_2
+{
+    display: flex;
+    justify-content: center;
+    background-color: #bdbaba;
+    padding: 70px 0px;
+}
+
+.quote_text_container
+{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote_text_container p
+{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: justify;
+}
+.quote_text_container h3
+{
+    align-self: flex-end;
 }
